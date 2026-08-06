@@ -2,7 +2,7 @@
 
 Komiko 的个人博客，基于 GitHub Pages 免费托管。
 
-- 站点地址：https://komiko0831.github.io/komiko/
+- 站点地址：https://komiko0831.github.io/
 - 发布方式：编辑 `posts/` 下的 HTML 文章，`git push` 后自动部署。
 
 ## 结构
