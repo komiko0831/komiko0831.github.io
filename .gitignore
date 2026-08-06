@@ -1,2 +1,6 @@
-.reasonix/
+public
+resources
+.hugo_build.lock
 .DS_Store
+assets/jsconfig.json
+.reasonix/
