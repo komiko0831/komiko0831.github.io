@@ -1,3 +1,13 @@
 /*
     You can add your own custom styles here.
 */
+
+// Homepage wallpaper (desktop only)
+@media (min-width: 1024px) {
+    body.home {
+        background-image: url("/images/wallpaper.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}

@@ -3,13 +3,8 @@ title: 友链
 slug: links
 links:
   - title: Halois
-    description: Think thickly — 密码学、格密码与安全研究笔记
     website: https://halois.top/
     image: https://s2.loli.net/2024/03/15/3hzW1UX5dHkIKuL.png
-  - title: GitHub
-    description: GitHub 是世界上最大的软件开发平台
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
 menu:
     main:
         weight: 4
