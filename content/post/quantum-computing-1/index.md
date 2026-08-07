@@ -19,13 +19,13 @@ math: true
 
 ### 狄拉克符号
 
-- **Ket** $\ket{a}$：类比线性代数中的列向量，形如：
+- **Ket** \(\ket{a}\)：类比线性代数中的列向量，形如：
 
 $$
 \ket a=\left[\begin{matrix}a_{1}\\a_{2}\\a_{3}\\a_{4}\\a_{5}\end{matrix}\right]
 $$
 
-- **Bra** $\bra{a}$：类比行向量，形如：
+- **Bra** \(\bra{a}\)：类比行向量，形如：
 
 $$
 \bra{a} = [a_{1},a_{2},a_{3},a_{4},a_{5}]
@@ -63,9 +63,9 @@ $$
 
 ### 克罗内科乘积
 
-$A\otimes B$
+\(A\otimes B\)
 
-设 $A=\left[\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{matrix}\right]$， $B=\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\end{bmatrix}$
+设 \(A=\left[\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{matrix}\right]\)， \(B=\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\end{bmatrix}\)
 
 $$
 A\otimes B=\begin{bmatrix}a_{11}B&a_{12}B\\a_{21}B&a_{22}B\end{bmatrix}
@@ -75,7 +75,7 @@ $$
 =\begin{bmatrix}a_{11}b_{11}&a_{11}b_{12}&a_{12}b_{11}&a_{12}Ab_{12}\\a_{11}b_{21}&a_{11}b_{22}&a_{12}b_{21}&a_{12}b_{22}\\a_{21}b_{11}&a_{21}b_{12}&a_{22}b_{11}&a_{22}b_{12}\\a_{21}b_{21}&a_{21}b_{22}&a_{22}b_{21}&a_{22}b_{22}\end{bmatrix}
 $$
 
-在量子计算中：当两个 kets 写在一起时，通常表示克罗内克乘积，即 $\ket{a}\ket{b} = \ket{a}\otimes \ket{b}$
+在量子计算中：当两个 kets 写在一起时，通常表示克罗内克乘积，即 \(\ket{a}\ket{b} = \ket{a}\otimes \ket{b}\)
 
 在量子计算中，我们通过向量来描述计算机的状态，使用 Kronecker 积可以非常快速地创建包含许多元素的大型矩阵，元素的这种指数增长正是模拟量子计算机的困难所在。
 
@@ -89,11 +89,11 @@ $$
 
 **在量子计算中，我们使用正交基向量 |0⟩ 和 |1⟩ 来表示量子位的开关状态：**
 
-$\ket{0} = \left[\begin{matrix}1\\0\end{matrix}\right]$， $\ket{1} = \left[\begin{matrix}0\\1\end{matrix}\right]$
+\(\ket{0} = \left[\begin{matrix}1\\0\end{matrix}\right]\)， \(\ket{1} = \left[\begin{matrix}0\\1\end{matrix}\right]\)
 
 另：还有
 
-$\ket{+} = \frac{1}{\sqrt 2}\left[\begin{matrix}1\\1\end{matrix}\right]$， $\ket{-} = \frac{1}{\sqrt 2}\left[\begin{matrix}1\\-1\end{matrix}\right]$
+\(\ket{+} = \frac{1}{\sqrt 2}\left[\begin{matrix}1\\1\end{matrix}\right]\)， \(\ket{-} = \frac{1}{\sqrt 2}\left[\begin{matrix}1\\-1\end{matrix}\right]\)
 
 $$
 \ket{+}=\frac{1}{\sqrt 2}(\ket{0}+\ket 1)
@@ -111,11 +111,11 @@ $$
 
 设
 
-$A=\left[\begin{matrix}1&0&2i\\0&4&0\\1+i&3&-2\end{matrix}\right]$
+\(A=\left[\begin{matrix}1&0&2i\\0&4&0\\1+i&3&-2\end{matrix}\right]\)
 
 则
 
-$A^{\dagger}=\left[\begin{matrix}1&0&1-i\\0&4&3\\-2i&0&-2\end{matrix}\right]$
+\(A^{\dagger}=\left[\begin{matrix}1&0&1-i\\0&4&3\\-2i&0&-2\end{matrix}\right]\)
 
 #### 酉矩阵（幺正矩阵，厄米共轭矩阵）
 
@@ -123,7 +123,7 @@ $A^{\dagger}=\left[\begin{matrix}1&0&1-i\\0&4&3\\-2i&0&-2\end{matrix}\right]$
 
 - **任何由两个酉矩阵的乘积构成的矩阵也是酉矩阵**
 
-设有矩阵 $u$，当 $u^{-1} = u^{\dagger}$ 时， $u$ 为幺正矩阵。
+设有矩阵 \(u\)，当 \(u^{-1} = u^{\dagger}\) 时， \(u\) 为幺正矩阵。
 
 #### 厄米尔特矩阵
 
@@ -143,7 +143,7 @@ $$
 
 在不考虑任何叠加态的情况下，如果规定永远只使用二维矢量空间中的基矢来存储信息，量子比特就变的与比特并无区别了。
 
-如何用量子状态表示比特的状态 0 呢？为了书写方便，我们将给它一个特殊的符号 $\left|0\right\rangle$
+如何用量子状态表示比特的状态 0 呢？为了书写方便，我们将给它一个特殊的符号 \(\left|0\right\rangle\)
 
 $$
 |0\rangle:=\begin{bmatrix}1\\0\end{bmatrix}
@@ -167,13 +167,13 @@ $$
 0.6|0\rangle+0.8|1\rangle
 $$
 
-他们可以表述为一个叠加的 $\left|0\right\rangle$ 和 $\left|1\right\rangle$，意思等同于 $\left|0\right\rangle$ 和 $\left|1\right\rangle$ 的一种线性组合，叫法上的差异来自不同的文化和历史。
+他们可以表述为一个叠加的 \(\left|0\right\rangle\) 和 \(\left|1\right\rangle\)，意思等同于 \(\left|0\right\rangle\) 和 \(\left|1\right\rangle\) 的一种线性组合，叫法上的差异来自不同的文化和历史。
 
 ### 振幅（Amplitude）
 
-振幅是某个基矢在叠加状态下的系数。例如，在状态 $0.6|0\rangle+0.8|1\rangle$ 中，$|0\rangle$ 的振幅是 0.6，$|1\rangle$ 的振幅是 0.8。
+振幅是某个基矢在叠加状态下的系数。例如，在状态 \(0.6|0\rangle+0.8|1\rangle\) 中，\(|0\rangle\) 的振幅是 0.6，\(|1\rangle\) 的振幅是 0.8。
 
-对于一个一般的量子比特的状态来讲，两个振幅都可以是复数，让我们用 $\alpha$ 和 $\beta$ 来表示：
+对于一个一般的量子比特的状态来讲，两个振幅都可以是复数，让我们用 \(\alpha\) 和 \(\beta\) 来表示：
 
 $$
 \alpha|0\rangle+\beta|1\rangle
@@ -234,7 +234,7 @@ $$
 CNOT(\ket{10}) = \ket{11}
 $$
 
-当控制比特为 $\ket + = \frac{1}{\sqrt2}(\ket0+\ket1)$ 时：
+当控制比特为 \(\ket + = \frac{1}{\sqrt2}(\ket0+\ket1)\) 时：
 
 $$
 CNOT(\ket{+0}) =\frac{1}{\sqrt2}(\ket{00}+\ket{11})

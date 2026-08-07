@@ -1,0 +1,30 @@
+{{- partial "helper/external" (dict "Context" . "Namespace" "KaTeX") -}}
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        // Physics macros used in Notion-synced notes (ket / bra / braket)
+        const macros = {
+            "\\ket": "\\left|{#1}\\right\\rangle",
+            "\\bra": "\\left\\langle{#1}\\right|",
+            "\\braket": "\\left\\langle{#1}\\right\\rangle",
+            "\\ketbra": "\\left|{#1}\\right\\rangle\\!\\left\\langle{#2}\\right|"
+        };
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "\\[", right: "\\]", display: true },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "$", right: "$", display: false }
+                    ],
+                    ignoredClasses: ["gist"],
+                    macros: macros
+                });
+            }
+        });
+    });
+</script>
